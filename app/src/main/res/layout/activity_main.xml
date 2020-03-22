@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8899BC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="249dp"
+        android:layout_marginBottom="482dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/index"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageButton
+        android:id="@+id/BotonGm"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/gastos_medicos"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BotonGmMayores"
+        app:layout_constraintEnd_toStartOf="@+id/BotonVida"
+        app:layout_constraintStart_toEndOf="@+id/BotonVh"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/BotonVh"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/vehiculo"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="Vh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/BotonVida"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/vida_si"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/BotonGmMayores"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="166dp"
+        android:background="@drawable/gastos_medicos_mayores"
+        android:backgroundTint="#FFFFFF"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonGm" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/icon"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

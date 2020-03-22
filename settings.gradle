@@ -1,0 +1,2 @@
+rootProject.name='Seguros APS App'
+include ':app'

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Seguros APS App</string>
+    <string name="Nombre">Asegurado:</string>>
+    <string name="Marca">Marca:</string>>
+    <string name="Tipo1">Automóvil</string>>
+    <string name="Tipo2">Camioneta 4x4</string>>
+    <string name="Tipo3">Pick-Up 4x2</string>>
+    <string name="Tipo4">Pick-Up 4x4</string>>
+    <string name="Tipo5">Camioneta 4x2</string>>
+    <string name="Linea">Línea:</string>>
+    <string name="Año">Año:</string>>
+    <string name="Valor">Valor:</string>>
+    <string name="MayorDe16">Mayor de 16 años</string>
+    <string name="MayorDe18">Mayor de 18 años</string>>
+    <string name="MayorDe21">Mayor de 21 años</string>>
+    <string name="Asientos">Asientos:</string>>
+    <string name="Rodado">Rodado</string>
+    <string name="Deducible">0% Deducible</string>
+    <string name="AlqOpcional">Alquiler Opcional</string>
+    <string name="Tipo">Tipo de Vehículo:</string>
+    <string name="Conducido">Conducido por:</string>
+    <string name="Cotización_Encabezado_Vh_Bam">COTIZACIÓN DE SEGURO DE AUTOMÓVIL- COBERTURA COMPLETA</string>
+    <string name="Tipode2">Tipo:</string>>
+    <string name="Rodado2">Rodado:</string>
+    <string name="Coberturas">Coberturas</string>
+    <string name="Basicas">Básicas</string>
+    <string name="Seccion1Vh">Sección I-Daños Propios</string>
+    <string name="Suma_Aseg">Suma Asegurada</string>
+    <string name="Deducibles">Deducibles</string>
+    <string name="Observ">Observaciones</string>
+    <string name="Seccion1_1">-Vuelcos y/o Colisiones accidentales</string>
+    <string name="Seccion1_2">-Robo y/o hurto total</string>
+    <string name="Deduc_minimo">-Deducible míninmo Q2,000.00</string>
+    <string name="Seccion2">-Sección II Responsabilidad Civil</string>
+    <string name="Seccion2_1">-Daños materiales a propiedad ajena</string>
+    <string name="Seccion2_2">-Lesiones corporales a terceros</string>
+    <string name="SumaAsegMat">Q600,000</string>
+    <string name="DañosCorporales">(L.U.C.)</string>
+    <string name="NA">N/A</string>
+    <string name="Seccion3">-Sección III - Lesiones a ocupantes del vehículo</string>
+    <string name="Seccion3_1">-Gastos Médicos a Ocupantes</string>
+    <string name="Seccion3_2">-Accidentes Personales a Ocupantes</string>
+    <string name="Seccion3_Observaciones">Por Accidente Q100,000.00</string>
+
+</resources>

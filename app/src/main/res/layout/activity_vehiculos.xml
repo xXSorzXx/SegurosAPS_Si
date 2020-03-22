@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vehiculos"
+
+    >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="166dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Conducido"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkRodado" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Tipo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkRodado" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="103dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Asientos"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAño" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Valor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Año"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Marca"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Asegurado" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Linea"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAsegurado" />
+
+    <EditText
+        android:id="@+id/etAsegurado"
+        android:layout_width="217dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="59dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAsegurado" />
+
+    <EditText
+        android:id="@+id/etLinea"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAsegurado" />
+
+    <TextView
+        android:id="@+id/Asegurado"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Nombre"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="414dp"
+        android:layout_height="139dp"
+        android:background="#B1D6CE"
+        app:srcCompat="@drawable/logoaps"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <RadioGroup
+        android:layout_width="161dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/RVh1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Tipo1" />
+
+        <RadioButton
+            android:id="@+id/RVh5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Tipo5" />
+
+        <RadioButton
+            android:id="@+id/RVh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Tipo2" />
+
+        <RadioButton
+            android:id="@+id/RVh3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Tipo3" />
+
+        <RadioButton
+            android:id="@+id/RVh4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Tipo4" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAño"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMarca" />
+
+    <EditText
+        android:id="@+id/etAsientos"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAño" />
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLinea" />
+
+    <CheckBox
+        android:id="@+id/checkDeducible"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Deducible"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkAlquiler" />
+
+    <CheckBox
+        android:id="@+id/checkRodado"
+        android:layout_width="221dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Rodado"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkDeducible" />
+
+    <CheckBox
+        android:id="@+id/checkAlquiler"
+        android:layout_width="221dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/AlqOpcional"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAsientos" />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/MayorDe16" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/MayorDe18" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/MayorDe21" />
+
+    </RadioGroup>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/FamPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_fab_label="Menú">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/FabVhAgro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickVhAgro"
+            android:src="@drawable/plus"
+            app:fab_label="Seguros Agromercantil" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
