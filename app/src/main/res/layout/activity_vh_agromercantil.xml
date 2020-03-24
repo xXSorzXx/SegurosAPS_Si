@@ -17,7 +17,6 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -30,8 +29,8 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="142dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvLinea"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView11"
@@ -43,7 +42,6 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvTituloLinea"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -57,7 +55,6 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toStartOf="@+id/tvTipo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -70,7 +67,6 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toStartOf="@+id/tvAño"
         app:layout_constraintStart_toEndOf="@+id/tvTipo"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloLinea" />
 
@@ -84,7 +80,6 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView13"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
 
@@ -97,7 +92,6 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toStartOf="@+id/tvLinea"
         app:layout_constraintStart_toEndOf="@+id/tvMarca"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -106,13 +100,11 @@
         android:layout_width="73dp"
         android:layout_height="21dp"
         android:layout_marginTop="43dp"
-        android:layout_marginEnd="43dp"
         android:background="#171059"
         android:text="@string/Valor"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -125,8 +117,8 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="142dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvAño"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView13"
@@ -138,7 +130,6 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
         app:layout_constraintStart_toEndOf="@+id/tvTituloLinea"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
 
@@ -146,329 +137,238 @@
         android:id="@+id/textView9"
         android:layout_width="105dp"
         android:layout_height="21dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
         android:background="#171059"
         android:text="@string/Conducido"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="73dp"
         android:layout_height="21dp"
+        android:layout_marginTop="9dp"
         android:background="#171059"
         android:text="@string/Rodado2"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/tvAño" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="96dp"
         android:layout_height="21dp"
+        android:layout_marginTop="9dp"
         android:background="#171059"
         android:text="@string/Deducible"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/tvAño" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="73dp"
         android:layout_height="21dp"
+        android:layout_marginTop="9dp"
         android:background="#171059"
         android:text="@string/Asientos"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/tvLinea" />
 
     <TextView
         android:id="@+id/tvAlquiler"
         android:layout_width="126dp"
         android:layout_height="21dp"
+        android:layout_marginStart="3dp"
         android:background="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="235dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="126dp"
         android:layout_height="21dp"
+        android:layout_marginStart="3dp"
         android:background="#171059"
         android:text="@string/AlqOpcional"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="214dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAsientos" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="402dp"
         android:layout_height="19dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="6dp"
         android:background="#171059"
         android:text="@string/Coberturas"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="275dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlquiler" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#838288"
         android:text="@string/Seccion1Vh"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#838288"
         android:text="@string/Seccion2"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#838288"
         android:text="@string/Seccion3"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#8BB6B5B5"
         android:text="@string/Seccion3_2"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#8BB6B5B5"
         android:text="@string/Seccion2_2"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#8BB6B5B5"
         android:text="@string/Seccion1_2"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="348dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#FFFFFF"
         android:text="@string/Seccion1_1"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#FFFFFF"
         android:text="@string/Seccion2_1"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView38"
         android:layout_width="203dp"
         android:layout_height="16dp"
+        android:layout_marginStart="3dp"
         android:background="#FFFFFF"
         android:text="@string/Seccion3_1"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <TextView
-        android:id="@+id/tvVuelcosDeducible"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="332dp" />
-
-    <TextView
-        android:id="@+id/tvVuelcosDeducible5"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:text="@string/NA"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <TextView
-        android:id="@+id/tvVuelcosDeducible7"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:text="@string/NA"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="380dp" />
-
-    <TextView
-        android:id="@+id/tvVuelcosDeducible4"
-        android:layout_width="84dp"
-        android:layout_height="32dp"
-        android:background="#FFFFFF"
-        android:text="@string/Deduc_minimo"
-        android:textColor="#000000"
-        android:textSize="9sp"
+        android:id="@+id/textView22"
+        android:layout_width="203dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:background="#171059"
+        android:text="@string/Basicas"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
-        android:id="@+id/tvVuelcosDeducible2"
-        android:layout_width="84dp"
-        android:layout_height="32dp"
-        android:background="#FFFFFF"
-        android:text="@string/Seccion3_Observaciones"
-        android:textColor="#000000"
-        android:textSize="9sp"
+        android:id="@+id/textView25"
+        android:layout_width="58dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="30dp"
+        android:background="#171059"
+        android:text="@string/Deducibles"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="324dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <TextView
-        android:id="@+id/tvRoboDeducible"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#8BB6B5B5"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="348dp" />
-
-    <TextView
-        android:id="@+id/tvRoboDeducible2"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#8BB6B5B5"
-        android:text="@string/NA"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="444dp" />
-
-    <TextView
-        android:id="@+id/tvRoboDeducible4"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:background="#8BB6B5B5"
-        android:text="@string/NA"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="396dp" />
-
-    <TextView
-        android:id="@+id/tvVuelcosSuma"
-        android:layout_width="59dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="332dp" />
-
-    <TextView
-        android:id="@+id/tvOcupantesSumaGm"
-        android:layout_width="59dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <TextView
-        android:id="@+id/tvVuelcosSuma5"
-        android:layout_width="59dp"
-        android:layout_height="16dp"
-        android:background="#FFFFFF"
-        android:text="@string/SumaAsegMat"
-        android:textColor="#000000"
-        android:textSize="11sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="380dp" />
-
-    <TextView
-        android:id="@+id/tvRoboSuma"
-        android:layout_width="59dp"
-        android:layout_height="16dp"
-        android:background="#8BB6B5B5"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="348dp" />
-
-    <TextView
-        android:id="@+id/tvOcupantesSumaAp"
-        android:layout_width="59dp"
-        android:layout_height="16dp"
-        android:background="#8BB6B5B5"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/tvRoboSuma4"
@@ -478,46 +378,133 @@
         android:text="@string/DañosCorporales"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintEnd_toStartOf="@+id/tvRoboDeducible4"
+        app:layout_constraintTop_toBottomOf="@+id/tvVuelcosSuma5" />
 
     <TextView
-        android:id="@+id/textView22"
-        android:layout_width="203dp"
-        android:layout_height="21dp"
-        android:background="#171059"
-        android:text="@string/Basicas"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:id="@+id/tvOcupantesSumaAp"
+        android:layout_width="59dp"
+        android:layout_height="16dp"
+        android:background="#8BB6B5B5"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoboDeducible2"
+        app:layout_constraintTop_toBottomOf="@+id/tvOcupantesSumaGm" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/tvVuelcosDeducible5"
         android:layout_width="58dp"
-        android:layout_height="37dp"
-        android:background="#171059"
-        android:text="@string/Deducibles"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:text="@string/NA"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoboDeducible4" />
 
     <TextView
-        android:id="@+id/textView27"
-        android:layout_width="84dp"
-        android:layout_height="37dp"
-        android:background="#171059"
-        android:text="@string/Observ"
-        android:textAlignment="textStart"
-        android:textColor="#FFFFFF"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:id="@+id/tvRoboSuma"
+        android:layout_width="59dp"
+        android:layout_height="16dp"
+        android:background="#8BB6B5B5"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoboDeducible"
+        app:layout_constraintTop_toBottomOf="@+id/tvVuelcosSuma" />
+
+    <TextView
+        android:id="@+id/tvVuelcosSuma"
+        android:layout_width="59dp"
+        android:layout_height="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvVuelcosDeducible"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/tvOcupantesSumaGm"
+        android:layout_width="59dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvVuelcosDeducible5"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoboSuma4" />
+
+    <TextView
+        android:id="@+id/tvRoboDeducible2"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#8BB6B5B5"
+        android:text="@string/NA"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVuelcosDeducible5" />
+
+    <TextView
+        android:id="@+id/tvVuelcosDeducible7"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:text="@string/NA"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoboDeducible" />
+
+    <TextView
+        android:id="@+id/tvVuelcosSuma5"
+        android:layout_width="59dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:text="@string/SumaAsegMat"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvVuelcosDeducible7"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoboSuma" />
+
+    <TextView
+        android:id="@+id/tvRoboDeducible"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#8BB6B5B5"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVuelcosDeducible" />
+
+    <TextView
+        android:id="@+id/tvRoboDeducible4"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#8BB6B5B5"
+        android:text="@string/NA"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVuelcosDeducible7" />
+
+    <TextView
+        android:id="@+id/tvVuelcosDeducible"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <TextView
         android:id="@+id/textView26"
@@ -529,21 +516,20 @@
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="295dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="90dp"
         android:layout_height="21dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="14dp"
         android:background="#171059"
         android:text="@string/Nombre"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvNombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -552,13 +538,11 @@
         android:layout_width="167dp"
         android:layout_height="21dp"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="140dp"
         android:background="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -571,8 +555,8 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvConducido2"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/tvDeducible"
@@ -583,20 +567,21 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvRodado"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/tvConducido2"
         android:layout_width="105dp"
         android:layout_height="21dp"
+        android:layout_marginStart="3dp"
         android:background="#FFFFFF"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/tvRodado"
@@ -607,8 +592,8 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvAsientos"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <ImageView
         android:id="@+id/imageView3"

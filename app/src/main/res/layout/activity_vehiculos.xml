@@ -292,14 +292,14 @@
             android:text="@string/MayorDe16" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/radioButton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
             android:text="@string/MayorDe18" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/radioButton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif-monospace"
